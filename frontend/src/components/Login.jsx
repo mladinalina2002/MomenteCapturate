@@ -43,7 +43,7 @@ const Login = () => {
 
           <div className="shadow-2xl">
             <GoogleLogin
-              clientId="1022670536294-42k9kefan82hmjepsc2l3pfliqr2tj5n.apps.googleusercontent.com"
+              clientId=" "
               render={(renderProps) => (
                 <button
                   type="button"
