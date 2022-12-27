@@ -17,10 +17,7 @@ const Login = () => {
       userName: response.profileObj?.name,
       image: response.profileObj?.imageUrl,
     };
-    
-    client.createIfNotExists(doc).then( res => {
-      navigate('/', { replace: true });
-    });
+   
   };
 
   return (
@@ -43,12 +40,13 @@ const Login = () => {
 
           <div className="shadow-2xl">
             <GoogleLogin
-              clientId=" "
+              clientId="1022670536294-42k9kefan82hmjepsc2l3pfliqr2tj5n.apps.googleusercontent.com"
               render={(renderProps) => (
                 <button
                   type="button"
                   className="bg-mainColor flex justify-center items-center p-3 rounded-lg cursor-pointer outline-none"
                   onClick={renderProps.onClick}
+                
                   disabled={renderProps.disabled}
                 >
                   <FcGoogle className="mr-4" /> Sign in with google
@@ -60,6 +58,7 @@ const Login = () => {
               onFailure={responseGoogle}
               cookiePolicy="single_host_origin"
             />
+             
           </div>
         </div>
       </div>
